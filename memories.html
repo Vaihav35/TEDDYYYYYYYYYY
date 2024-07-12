@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Memories</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+    animation: slideInDown 1s ease-out;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: zoomIn 1s ease-out;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: slideInLeft 1s ease-out;
+  }
+  table td {
+    padding: 10px;
+    text-align: center;
+  }
+  table img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  table img:hover {
+    transform: scale(1.1);
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-out;
+  }
+  p {
+    text-align: justify;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0;
+    animation: fadeInUp 1s ease-out;
+  }
+  video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    animation: slideInRight 1s ease-out;
+  }
+  /* Marquee Styles */
+  marquee {
+    background-color: #ff8ba7; /* Pink */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  /* Keyframes for Animations */
+  @keyframes slideInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes zoomIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  @keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px #ffb6c1; }
+    100% { box-shadow: 0 0 20px #ff4384; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Memories</h1>
+
+  <table>
+    <tr>
+      <td><img src="101.jpg" alt="Photo 1"></td>
+      <td><img src="102.jpg" alt="Photo 2"></td>
+      <td><img src="103.jpg" alt="Photo 3"></td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <p><strong><u>1st image -</u></strong> Okay! So you know what, that image is a simple reply to my note in case of memes. Firstly, I was a bit awkward seeing it for the first time, but when I started talking, I got to know you are sweet and innocent types. The date and time are still in my heart.</p>
+
+  <hr>
+
+  <p><strong><u>2nd image -</u></strong> After talking for a while, I got to know you are also someone like me who is too annoyed by Usha. We just started talking about all the teachers and I got to know this was your first year in MIS. Then, we randomly talked and started talking all day after that!</p>
+
+  <hr>
+
+  <p><strong><u>3rd image -</u></strong> After talking to you, I knew you had an ex and you did not move on. Suddenly, I started developing feelings for you by your behavior and all. One day I got guts to speak up but you know what happened. Yeah, that was the reality.</p>
+
+  <hr>
+
+  <p>Also, honestly, I liked it when you said that. Because people nowadays don’t know the limits. <strong><u>The first compliment from you!</u></strong></p>
+
+  <video controls width="100%" height="300">
+    <source src="1111.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <marquee>THIS IS THE 1ST VOICE NOTE THAT I GOT.. SORRY VIDHII DON'T KILL ME!!</marquee>
+
+</div>
+
+</body>
+</html>

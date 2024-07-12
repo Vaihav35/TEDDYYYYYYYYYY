@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 20px; /* spacing between items */
+            margin-top: 20px;
+        }
+        .photo-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        /* Marquee styles */
+        marquee {
+            font-style: italic;
+            color: #007bff;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Photo Gallery</h1>
+
+    <div class="photo-grid">
+        <div class="photo-item">
+            <img src="201.jpg" alt="Photo 201">
+        </div>
+        <div class="photo-item">
+            <img src="202.jpg" alt="Photo 202">
+        </div>
+        <div class="photo-item">
+            <img src="203.jpg" alt="Photo 203">
+        </div>
+        <div class="photo-item">
+            <img src="104.jpg" alt="Photo 104">
+        </div>
+        <div class="photo-item">
+            <img src="105.jpg" alt="Photo 105">
+        </div>
+        <div class="photo-item">
+            <img src="206.jpg" alt="Photo 206">
+        </div>
+        <div class="photo-item">
+            <img src="107.jpg" alt="Photo 107">
+        </div>
+        <div class="photo-item">
+            <img src="108.jpg" alt="Photo 108">
+        </div>
+        <div class="photo-item">
+            <img src="109.jpg" alt="Photo 109">
+        </div>
+        <div class="photo-item">
+            <img src="110.jpg" alt="Photo 110">
+        </div>
+    </div>
+
+    <marquee direction="left">SEE, YOU ARE ABSOLUTELY BEAUTIFUL!! AND YOU SAY YOU LOOK WEIRD. AAPKE LOOKS BHI HAI AUR PERSONALITY BHI GEM HAI HI!!</marquee>
+</div>
+
+</body>
+</html>

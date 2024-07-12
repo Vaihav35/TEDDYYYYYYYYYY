@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VIDHIIIIII - Love & Serenity</title>
+<style>
+  /* General Styles */
+  body {
+    background-color: #fceff2; /* Pale pink background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  /* Header Styles */
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #ff4384; /* Bright pink */
+    text-decoration: underline;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-out;
+  }
+  .quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    color: #ff4384; /* Bright pink */
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  /* Love Message Styles */
+  .love-message {
+    text-align: center;
+    font-size: 20px;
+    color: #ff4384; /* Bright pink */
+    margin-top: 20px;
+    animation: slideInLeft 1.5s ease-out;
+  }
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: bounceInUp 2s ease-out;
+  }
+  /* Marquee Styles */
+  .marquee {
+    background-color: #ff4384; /* Bright pink */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  /* Loader Animation Styles */
+  .loader {
+    border: 4px solid #f3f3f3; /* Light gray */
+    border-top: 4px solid #ff4384; /* Bright pink */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    display: none; /* Initially hidden */
+  }
+  /* Keyframes for Animations */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px #ffb6c1; }
+    100% { box-shadow: 0 0 20px #ff4384; }
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes bounceInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Explore Section Styles */
+  .explore-section {
+    text-align: center;
+    margin-top: 40px;
+    animation: zoomIn 1.5s ease-out;
+  }
+  .explore-section h2 {
+    font-size: 36px;
+    color: #ff4384; /* Bright pink */
+    animation: fadeIn 1.5s ease-out;
+  }
+  .explore-section p {
+    font-size: 18px;
+    color: #8a8a8a; /* Gray */
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  /* Thumbnail Styles */
+  .thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .thumbnail {
+    margin: 0 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
+  }
+  .thumbnail img {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease;
+  }
+  .thumbnail:hover img {
+    transform: scale(1.1);
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .thumbnails {
+      flex-direction: column;
+      align-items: center;
+    }
+    .thumbnail {
+      margin: 10px 0;
+    }
+  }
+</style>
+<script>
+  // JavaScript function to show loader and simulate loading
+  function showLoader() {
+    var loader = document.getElementById('loader');
+    loader.style.display = 'block'; // Show the loader
+
+    setTimeout(function() {
+      window.location.href = 'button.html'; // Redirect after loading
+    }, 2000); // Simulated 2 second loading time
+  }
+</script>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Radhe Radhe, Teddyy</h1>
+
+  <a href="vidhi2.html"><img src="45.jpg" height="400px" width="100%" style="display: block; margin: 20px auto; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);"></a>
+
+  <p class="quote">
+    "खत खोलो तुम, दिल की बातें हैं इसमें,<br>
+    जो मैं छुपा नहीं पाता, वो सब इसमें।"
+  </p>
+
+  <p class="love-message">
+    This is the journey, filled with love and serenity,<br>
+    From 20/02/2024 until today, my heart is yours.
+  </p>
+
+  <hr>
+
+  <div id="loader" class="loader"></div>
+
+  <p class="footer">
+    <a href="#" onclick="showLoader()">जय श्री कृष्ण 🤍🕊</a>
+  </p>
+
+  <hr>
+
+  <marquee class="marquee">May you shine bright like the stars above!</marquee>
+
+  <hr>
+
+  <div class="explore-section">
+    <h2>Explore Our Love Story</h2>
+    <p>Experience our beautiful moments together:</p>
+    <div class="thumbnails">
+      <div class="thumbnail">
+        <a href="memories.html">Memories</a>
+      </div>
+      <div class="thumbnail">
+        <a href="photos.html">Photos</a>
+      </div>
+      <div class="thumbnail">
+        <a href="videos.html">Videos</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
